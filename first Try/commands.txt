@@ -1,0 +1,39 @@
+docker build --help 
+
+docker build --tag hello-world .
+
+docker images
+
+docker run --help
+
+docker run hello-world
+
+docker ps
+
+docker ps -a
+
+docker start frosty_blackwell
+
+docker stop frosty_blackwell
+
+docker rm frosty_blackwell
+
+
+// Internet Connection
+########################
+
+docker run -d -p 80:80 docker/getting-started
+
+OR
+
+docker run -p 8080:80 --name hello -d hello-world
+
+docker ps
+
+
+// Logs:
+#########
+
+docker start hello 
+docker logs hello
+docker logs --help
